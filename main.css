@@ -1,1 +1,23 @@
+.dark-mode {
+    color: white;
+    background-color: black;
+}
 
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.container {
+   min-height:100%;
+   position:relative;
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:auto;   /* Height of the footer */
+   background:rgb(51, 51, 51);
+}
