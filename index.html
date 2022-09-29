@@ -6,9 +6,33 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-</head>
-<body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='main.js' defer></script>
+<body class="dark-mode">
+    <div class="container">
+
+        <div class="row m-4 p-4">
+            <div class="form-group col-sm-12 col-md-3">
+                <label for="pic_url">Kép URL címe:</label>
+                <input class="form-control" type="text" id="pic_url">
+            </div>
+            <div class="form-group col-sm-12 col-md-3">
+                <label for="pic_width">Kép szélessége:</label>
+                <input class="form-control" type="number" id="pic_width">
+            </div>
+            <div class="form-group col-sm-12 col-md-3">
+                <label for="border_w">Keret vastagsága:</label>
+                <input class="form-control" type="number" id="border_w">
+            </div>
+            <div class="form-group col-sm-12 col-md-3">
+                <label for="border_c">Keret színe:</label>
+                <input class="form-control" type="color" id="border_c">
+            </div>
+        </div>
+            <div class="container d-flex justify-content-center">
+                <img id="output" style="border:1px solid #000">
+            </div>
+    </div>    
 </body>
 </html>
